@@ -2,76 +2,22 @@
 export libhdf5, libhdf5_hl
 
 using Zlib_jll
-## Global variables
-PATH = ""
-LIBPATH = ""
-LIBPATH_env = "LD_LIBRARY_PATH"
-LIBPATH_default = ""
-
-# Relative path to `libhdf5`
-const libhdf5_splitpath = ["lib", "libhdf5.so.103.0.0"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libhdf5_path = ""
-
-# libhdf5-specific global declaration
-# This will be filled out by __init__()
-libhdf5_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libhdf5 = "libhdf5-cafdb71e.so.103.0.0"
-
-
-# Relative path to `libhdf5_hl`
-const libhdf5_hl_splitpath = ["lib", "libhdf5_hl.so.100.1.1"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libhdf5_hl_path = ""
-
-# libhdf5_hl-specific global declaration
-# This will be filled out by __init__()
-libhdf5_hl_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libhdf5_hl = "libhdf5_hl-3aef14e1.so.100.1.1"
-
-
-# Inform that the wrapper is available for this platform
-wrapper_available = true
-
-"""
-Open all libraries
-"""
+JLLWrappers.@generate_wrapper_header("HDF5")
+JLLWrappers.@declare_library_product(libhdf5, "libhdf5-cafdb71e.so.103.0.0")
+JLLWrappers.@declare_library_product(libhdf5_hl, "libhdf5_hl-3aef14e1.so.100.1.1")
 function __init__()
-    # This either calls `@artifact_str()`, or returns a constant string if we're overridden.
-    global artifact_dir = find_artifact_dir()
+    JLLWrappers.@generate_init_header(Zlib_jll)
+    JLLWrappers.@init_library_product(
+        libhdf5,
+        "lib/libhdf5.so.103.0.0",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    global PATH_list, LIBPATH_list
-    # Initialize PATH and LIBPATH environment variable listings
-    # From the list of our dependencies, generate a tuple of all the PATH and LIBPATH lists,
-    # then append them to our own.
-    foreach(p -> append!(PATH_list, p), (Zlib_jll.PATH_list,))
-    foreach(p -> append!(LIBPATH_list, p), (Zlib_jll.LIBPATH_list,))
+    JLLWrappers.@init_library_product(
+        libhdf5_hl,
+        "lib/libhdf5_hl.so.100.1.1",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    global libhdf5_path = normpath(joinpath(artifact_dir, libhdf5_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libhdf5_handle = dlopen(libhdf5_path, RTLD_LAZY | RTLD_DEEPBIND)
-    push!(LIBPATH_list, dirname(libhdf5_path))
-
-    global libhdf5_hl_path = normpath(joinpath(artifact_dir, libhdf5_hl_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libhdf5_hl_handle = dlopen(libhdf5_hl_path, RTLD_LAZY | RTLD_DEEPBIND)
-    push!(LIBPATH_list, dirname(libhdf5_hl_path))
-
-    # Filter out duplicate and empty entries in our PATH and LIBPATH entries
-    filter!(!isempty, unique!(PATH_list))
-    filter!(!isempty, unique!(LIBPATH_list))
-    global PATH = join(PATH_list, ':')
-    global LIBPATH = join(vcat(LIBPATH_list, [joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)]), ':')
-
-    
+    JLLWrappers.@generate_init_footer()
 end  # __init__()
