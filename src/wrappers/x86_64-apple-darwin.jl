@@ -2,20 +2,22 @@
 export libhdf5, libhdf5_hl
 
 using Zlib_jll
+using OpenSSL_jll
+using LibCURL_jll
 JLLWrappers.@generate_wrapper_header("HDF5")
-JLLWrappers.@declare_library_product(libhdf5, "@rpath/libhdf5.103.dylib")
-JLLWrappers.@declare_library_product(libhdf5_hl, "@rpath/libhdf5_hl.100.dylib")
+JLLWrappers.@declare_library_product(libhdf5, "@rpath/libhdf5.200.dylib")
+JLLWrappers.@declare_library_product(libhdf5_hl, "@rpath/libhdf5_hl.200.dylib")
 function __init__()
-    JLLWrappers.@generate_init_header(Zlib_jll)
+    JLLWrappers.@generate_init_header(Zlib_jll, OpenSSL_jll, LibCURL_jll)
     JLLWrappers.@init_library_product(
         libhdf5,
-        "lib/libhdf5.103.dylib",
+        "lib/libhdf5.200.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_hl,
-        "lib/libhdf5_hl.100.dylib",
+        "lib/libhdf5_hl.200.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
