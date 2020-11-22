@@ -1,42 +1,42 @@
 [[HDF5]]
 arch = "aarch64"
-git-tree-sha1 = "30ad191de7e781207345ea093dc594f66ffe7d6f"
+git-tree-sha1 = "3a173edad702c15203127f6bd31ce476fc570834"
 libc = "glibc"
 os = "linux"
 
     [[HDF5.download]]
-    sha256 = "5247802b1e3ba7384b0b74794d0e9996c4bf5e17db187fea0596bbe24fde70eb"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+0/HDF5.v1.12.0.aarch64-linux-gnu.tar.gz"
+    sha256 = "322c52bfda24feda865fedc798775f60315bab758ce2b9984c6e17f9efe70d65"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+1/HDF5.v1.12.0.aarch64-linux-gnu.tar.gz"
 [[HDF5]]
 arch = "i686"
-git-tree-sha1 = "f4d1e5fbeb6d89e2221a1dbac35cfff3a2a8aa85"
+git-tree-sha1 = "2a94c1fb194c5b417a145f77a2245f15c41689a5"
 os = "windows"
 
     [[HDF5.download]]
-    sha256 = "d8876fa80b40058a1bcf8e3e446bd4d45214ed6642dda284568b788d19a287bc"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+0/HDF5.v1.12.0.i686-w64-mingw32.tar.gz"
+    sha256 = "6663ecf9165dd186e9cce6a81f88bc48910e90f5804e6262f27300cf9b789653"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+1/HDF5.v1.12.0.i686-w64-mingw32.tar.gz"
 [[HDF5]]
 arch = "x86_64"
-git-tree-sha1 = "0692e9c1b1fd1673d9c03af36543ce5bb281b8d6"
+git-tree-sha1 = "8c55a224b6ddf8b96896598f71296bc283b8a3e0"
 os = "macos"
 
     [[HDF5.download]]
-    sha256 = "a4e7e67fb56eacd99d358d1ca904596dd36aadfff98e9eae997992696a29dfef"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+0/HDF5.v1.12.0.x86_64-apple-darwin.tar.gz"
+    sha256 = "f8defaff5a1c9ea5a43f552b574de1754f470e53f43cdca71a71684e7439323f"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+1/HDF5.v1.12.0.x86_64-apple-darwin.tar.gz"
 [[HDF5]]
 arch = "x86_64"
-git-tree-sha1 = "eed3786d0f5cf666fd71b8cd82ec4344472e89e5"
+git-tree-sha1 = "997813d46a8a06e6e9871a2a01483f91ce954eca"
 libc = "glibc"
 os = "linux"
 
     [[HDF5.download]]
-    sha256 = "d36e6656370d67cac09c3cd5efa909f7f6a3fc560059e1d8e8113a695703fe01"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+0/HDF5.v1.12.0.x86_64-linux-gnu.tar.gz"
+    sha256 = "5228e0ed33022a333723ac8953e1c7a8c5e55a1f13df17168007bda7bba57aaa"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+1/HDF5.v1.12.0.x86_64-linux-gnu.tar.gz"
 [[HDF5]]
 arch = "x86_64"
-git-tree-sha1 = "47e0360adc80fb66c913c30159d2f5cf070fa3a0"
+git-tree-sha1 = "ddf4513daee7cc7b17c306023cefcc64282809d2"
 os = "windows"
 
     [[HDF5.download]]
-    sha256 = "69b9535cfe704da58711c0d09958459049ba6275c29504ab9be1a0ede16e15eb"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+0/HDF5.v1.12.0.x86_64-w64-mingw32.tar.gz"
+    sha256 = "be05cf2250f73cf3f3debaf7f65901b345ac1b2814420ad788dfa825e99a05d2"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v1.12.0+1/HDF5.v1.12.0.x86_64-w64-mingw32.tar.gz"
