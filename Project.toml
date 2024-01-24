@@ -1,6 +1,6 @@
 name = "HDF5_jll"
 uuid = "0234f1f7-429e-5d53-9886-15a909be8d59"
-version = "1.14.3+0"
+version = "1.14.3+1"
 
 [deps]
 MPIPreferences = "3da0fdf6-3ccc-4f1b-acd9-58baa6c99267"
@@ -29,4 +29,4 @@ Libdl = "1"
 MPItrampoline_jll = "5.3.1"
 TOML = "1"
 Artifacts = "1"
-OpenMPI_jll = "4.1.6"
+OpenMPI_jll = "4.1.6, 5"
