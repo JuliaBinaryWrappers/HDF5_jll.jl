@@ -1,6 +1,6 @@
 name = "HDF5_jll"
 uuid = "0234f1f7-429e-5d53-9886-15a909be8d59"
-version = "1.14.3+1"
+version = "1.14.3+2"
 
 [deps]
 MPIPreferences = "3da0fdf6-3ccc-4f1b-acd9-58baa6c99267"
@@ -20,13 +20,14 @@ OpenMPI_jll = "fe0851c0-eecd-5654-98d4-656369965a5c"
 MicrosoftMPI_jll = "9237b28f-5490-5468-be7b-bb81f5f5e6cf"
 
 [compat]
-JLLWrappers = "1.4.0"
-julia = "1.6"
 MPIPreferences = "0.1"
-OpenSSL_jll = "3.0.8"
-LazyArtifacts = "1"
 Libdl = "1"
+LazyArtifacts = "1"
+JLLWrappers = "1.4.0"
+Artifacts = "1"
+julia = "1.6"
+LibCURL_jll = "7.73,8"
+OpenSSL_jll = "3.0.8"
 MPItrampoline_jll = "5.3.1"
 TOML = "1"
-Artifacts = "1"
 OpenMPI_jll = "4.1.6, 5"
