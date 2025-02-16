@@ -13,7 +13,7 @@ JLLWrappers.@declare_library_product(libhdf5_cpp, "libhdf5_cpp.so.310")
 JLLWrappers.@declare_library_product(libhdf5_fortran, "libhdf5_fortran.so.310")
 JLLWrappers.@declare_library_product(libhdf5_hl, "libhdf5_hl.so.310")
 JLLWrappers.@declare_library_product(libhdf5_hl_cpp, "libhdf5_hl_cpp.so.310")
-JLLWrappers.@declare_library_product(libhdf5_hl_fortran, "libhdf5hl_fortran.so.310")
+JLLWrappers.@declare_library_product(libhdf5_hl_fortran, "libhdf5_hl_fortran.so.310")
 JLLWrappers.@declare_executable_product(h5clear)
 JLLWrappers.@declare_executable_product(h5copy)
 JLLWrappers.@declare_executable_product(h5debug)
@@ -65,7 +65,7 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libhdf5_hl_fortran,
-        "lib/libhdf5hl_fortran.so",
+        "lib/libhdf5_hl_fortran.so",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
