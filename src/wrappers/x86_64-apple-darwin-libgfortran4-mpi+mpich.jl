@@ -35,37 +35,37 @@ function __init__()
     JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, LibCURL_jll, OpenSSL_jll, Zlib_jll, libaec_jll, MPICH_jll, MPIPreferences)
     JLLWrappers.@init_library_product(
         libhdf5,
-        "lib/libhdf5.310.5.0.dylib",
+        "lib/libhdf5.310.5.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_cpp,
-        "lib/libhdf5_cpp.310.0.5.dylib",
+        "lib/libhdf5_cpp.310.0.6.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_fortran,
-        "lib/libhdf5_fortran.310.3.1.dylib",
+        "lib/libhdf5_fortran.310.3.2.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_hl,
-        "lib/libhdf5_hl.310.0.5.dylib",
+        "lib/libhdf5_hl.310.0.6.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_hl_cpp,
-        "lib/libhdf5_hl_cpp.310.0.5.dylib",
+        "lib/libhdf5_hl_cpp.310.0.6.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_hl_fortran,
-        "lib/libhdf5_hl_fortran.310.0.5.dylib",
+        "lib/libhdf5_hl_fortran.310.0.6.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
