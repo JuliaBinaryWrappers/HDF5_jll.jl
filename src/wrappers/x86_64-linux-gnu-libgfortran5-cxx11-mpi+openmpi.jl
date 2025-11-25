@@ -5,15 +5,16 @@ using CompilerSupportLibraries_jll
 using LibCURL_jll
 using OpenSSL_jll
 using Zlib_jll
+using aws_c_s3_jll
 using libaec_jll
 using OpenMPI_jll
 JLLWrappers.@generate_wrapper_header("HDF5")
-JLLWrappers.@declare_library_product(libhdf5, "libhdf5.so.310")
-JLLWrappers.@declare_library_product(libhdf5_cpp, "libhdf5_cpp.so.310")
-JLLWrappers.@declare_library_product(libhdf5_fortran, "libhdf5_fortran.so.310")
-JLLWrappers.@declare_library_product(libhdf5_hl, "libhdf5_hl.so.310")
-JLLWrappers.@declare_library_product(libhdf5_hl_cpp, "libhdf5_hl_cpp.so.310")
-JLLWrappers.@declare_library_product(libhdf5_hl_fortran, "libhdf5_hl_fortran.so.310")
+JLLWrappers.@declare_library_product(libhdf5, "libhdf5.so.320")
+JLLWrappers.@declare_library_product(libhdf5_cpp, "libhdf5_cpp.so.320")
+JLLWrappers.@declare_library_product(libhdf5_fortran, "libhdf5_fortran.so.320")
+JLLWrappers.@declare_library_product(libhdf5_hl, "libhdf5_hl.so.320")
+JLLWrappers.@declare_library_product(libhdf5_hl_cpp, "libhdf5_hl_cpp.so.320")
+JLLWrappers.@declare_library_product(libhdf5_hl_fortran, "libhdf5_hl_fortran.so.320")
 JLLWrappers.@declare_executable_product(h5clear)
 JLLWrappers.@declare_executable_product(h5copy)
 JLLWrappers.@declare_executable_product(h5debug)
@@ -32,7 +33,7 @@ JLLWrappers.@declare_executable_product(h5stat)
 JLLWrappers.@declare_executable_product(h5unjam)
 JLLWrappers.@declare_executable_product(h5watch)
 function __init__()
-    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, LibCURL_jll, OpenSSL_jll, Zlib_jll, libaec_jll, OpenMPI_jll, MPIPreferences)
+    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, LibCURL_jll, OpenSSL_jll, Zlib_jll, aws_c_s3_jll, libaec_jll, OpenMPI_jll, MPIPreferences)
     JLLWrappers.@init_library_product(
         libhdf5,
         "lib/libhdf5.so",

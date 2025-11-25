@@ -5,6 +5,8 @@ using CompilerSupportLibraries_jll
 using LibCURL_jll
 using OpenSSL_jll
 using Zlib_jll
+using aws_c_s3_jll
+using dlfcn_win32_jll
 using libaec_jll
 using MicrosoftMPI_jll
 JLLWrappers.@generate_wrapper_header("HDF5")
@@ -32,7 +34,7 @@ JLLWrappers.@declare_executable_product(h5stat)
 JLLWrappers.@declare_executable_product(h5unjam)
 JLLWrappers.@declare_executable_product(h5watch)
 function __init__()
-    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, LibCURL_jll, OpenSSL_jll, Zlib_jll, libaec_jll, MicrosoftMPI_jll, MPIPreferences)
+    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, LibCURL_jll, OpenSSL_jll, Zlib_jll, aws_c_s3_jll, dlfcn_win32_jll, libaec_jll, MicrosoftMPI_jll, MPIPreferences)
     JLLWrappers.@init_library_product(
         libhdf5,
         "bin\\libhdf5.dll",
