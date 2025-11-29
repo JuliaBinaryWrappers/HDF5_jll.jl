@@ -8,7 +8,7 @@ os = "macos"
 
     [[HDF5.download]]
     sha256 = "17b8e2f1087f1ae63dd67ad25660a4083d2a0a4e6db89575dbf5718ea1ba4783"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.aarch64-apple-darwin-libgfortran5-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-apple-darwin-libgfortran5-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "aarch64"
 git-tree-sha1 = "b5422884b3acaf9d4afdb260e2c6085dcbfbd1a2"
@@ -19,7 +19,7 @@ os = "macos"
 
     [[HDF5.download]]
     sha256 = "2be6595f54e1bf099d65d3fe94ea9cf5d85ff70c069a374b0a0b18a310bceccb"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.aarch64-apple-darwin-libgfortran5-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-apple-darwin-libgfortran5-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "aarch64"
 git-tree-sha1 = "7dd284d3710e6b966de1f25525fd9b5d927cfaa4"
@@ -30,7 +30,7 @@ os = "macos"
 
     [[HDF5.download]]
     sha256 = "eccafc06fc487053475608ada4541cc74a4a7dacf4c54e62e64d4594d18a3ac1"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.aarch64-apple-darwin-libgfortran5-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-apple-darwin-libgfortran5-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "aarch64"
 cxxstring_abi = "cxx11"
@@ -43,7 +43,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "39e5733cef49f001f6d73d99b4642093a5e1cf67a03cd2895d9b7ea843e51743"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.aarch64-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "aarch64"
 cxxstring_abi = "cxx11"
@@ -56,7 +56,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "ace99ebc108d3bb7520b551fb2660dd321258703442f87530714fd57d22d9893"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.aarch64-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "aarch64"
 cxxstring_abi = "cxx11"
@@ -69,7 +69,33 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "82c2eafb168dcbb1201908520593e11d5155c7247fb57fc86c1810d15b79876d"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.aarch64-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+[[HDF5]]
+arch = "aarch64"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "8ef7e5a7e5a3077b5e173debb2b23638a2150076"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "mpich"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "c8fcf1da9730aeb840516af535641bcc5176c9a815ac761dae141db63ef38263"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-linux-musl-libgfortran5-cxx11-mpi+mpich.tar.gz"
+[[HDF5]]
+arch = "aarch64"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "7397fc46ae357d56ab7198219617d7c2081b2eb5"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "openmpi"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "3c3a5ae0b3f6f35a1277d8eb078f2cdeaa9b83d0cbdb3a4b01f2b945262c7b8d"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-linux-musl-libgfortran5-cxx11-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "aarch64"
 git-tree-sha1 = "ede56f34d83ea31f7b65cbdd76da59933300653a"
@@ -80,7 +106,7 @@ os = "freebsd"
 
     [[HDF5.download]]
     sha256 = "d48a15c541ab2fa98055812cf89cc60edd952cc51e0a1b38cac51afd47f56877"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.aarch64-unknown-freebsd-libgfortran5-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-unknown-freebsd-libgfortran5-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "aarch64"
 git-tree-sha1 = "5006eaed9d35f41f40fdd0a17831f5cbf27e1f0b"
@@ -91,7 +117,7 @@ os = "freebsd"
 
     [[HDF5.download]]
     sha256 = "7faccd12530b2998216ee58dcefe30dd0d8d7cf7df67b152c4abea427fb14989"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.aarch64-unknown-freebsd-libgfortran5-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-unknown-freebsd-libgfortran5-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "aarch64"
 git-tree-sha1 = "fc4a9eaab9b8c91c2e1d1c60eb6292bf42c928b7"
@@ -102,7 +128,7 @@ os = "freebsd"
 
     [[HDF5.download]]
     sha256 = "b8a530d088b8f38b89b2eb3c20ad3eee51d9575d4c161f37f0efaeab56f71776"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.aarch64-unknown-freebsd-libgfortran5-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.aarch64-unknown-freebsd-libgfortran5-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "armv6l"
 call_abi = "eabihf"
@@ -116,7 +142,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "90d89f6b12a609bed47b33d525c47840586edbb9d38d390887e4fc3423c7b7a3"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.armv6l-linux-gnueabihf-libgfortran5-cxx11-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.armv6l-linux-gnueabihf-libgfortran5-cxx11-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "armv6l"
 call_abi = "eabihf"
@@ -130,7 +156,35 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "c6b6f775e85ecfdf8168c0411a30f397df66adf5d8bed180685dfb6fe8970541"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.armv6l-linux-gnueabihf-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.armv6l-linux-gnueabihf-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
+[[HDF5]]
+arch = "armv6l"
+call_abi = "eabihf"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "a420c388791eadb356633b03654c6c87dcaa4006"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "mpich"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "fdd740fe7b72b6cb3bd94534c357544d3c40bc4f0fdea9d99c63b1cb87f095ca"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.armv6l-linux-musleabihf-libgfortran5-cxx11-mpi+mpich.tar.gz"
+[[HDF5]]
+arch = "armv6l"
+call_abi = "eabihf"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "a244a32566f18d5d996625bc359cffedbf021c44"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "openmpi"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "48e052f7b2b9a5734ba41483d51fd24a4a6e2ff2d90d4557674d68a9f661edd6"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.armv6l-linux-musleabihf-libgfortran5-cxx11-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "armv7l"
 call_abi = "eabihf"
@@ -144,7 +198,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "d34e1f3695f9348d0d6dfda9838df534267b8054fbb09c4055a6aa0afda9c609"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.armv7l-linux-gnueabihf-libgfortran5-cxx11-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.armv7l-linux-gnueabihf-libgfortran5-cxx11-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "armv7l"
 call_abi = "eabihf"
@@ -158,7 +212,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "5b677903df0e35879670e5eab8ee99effb62670ed2c1269dad3208b17831602c"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.armv7l-linux-gnueabihf-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.armv7l-linux-gnueabihf-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "armv7l"
 call_abi = "eabihf"
@@ -172,7 +226,35 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "006ade9e88957931b8a4a2c7856838e77caddf53da8a427f4864c20f10c2179d"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.armv7l-linux-gnueabihf-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.armv7l-linux-gnueabihf-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+[[HDF5]]
+arch = "armv7l"
+call_abi = "eabihf"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "fb3a2f1c3d9fecbc34223833784736b66a587fa7"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "mpich"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "67bd0168d3b1568b3e002b22b0e7d163bc1bd436399f5fc2e3df59ab0e6cb819"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.armv7l-linux-musleabihf-libgfortran5-cxx11-mpi+mpich.tar.gz"
+[[HDF5]]
+arch = "armv7l"
+call_abi = "eabihf"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "bb57894deab4c568fb74de124fb05ccd129cd006"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "openmpi"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "7fa93ff9b1f4758dfa098465d37c7e068dad7b2d04afdd38d2362c21b6a30783"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.armv7l-linux-musleabihf-libgfortran5-cxx11-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "i686"
 cxxstring_abi = "cxx11"
@@ -185,7 +267,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "4e9eb58ddf92236b9f526ae6aa72a1214182ee035a9b7f12a2509e02d2e8adf9"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.i686-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.i686-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "i686"
 cxxstring_abi = "cxx11"
@@ -198,7 +280,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "346bce0df4ac59de6a374d0b2eddae30c68ec4e78a3cb3ec247598dde8d18088"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.i686-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.i686-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "i686"
 cxxstring_abi = "cxx11"
@@ -211,7 +293,33 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "395385a1b32f78c7d9f060403a6b475b94164ba1397d6d276751c4144986afe9"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.i686-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.i686-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+[[HDF5]]
+arch = "i686"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "04e56863540573ebd2238edf287415991bbee9ea"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "mpich"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "c128a8c06d4a3c62f5772a730a5e59b98593dcfa52b9a6845f1ee685ab978ffe"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.i686-linux-musl-libgfortran5-cxx11-mpi+mpich.tar.gz"
+[[HDF5]]
+arch = "i686"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "c0f5c3f289b29add8ace1ca7b468564ec1d0b813"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "openmpi"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "008a1485d1211bb5ad90da0a696afb9e8a658803ee69aa9387ab67c2d481aec3"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.i686-linux-musl-libgfortran5-cxx11-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "i686"
 cxxstring_abi = "cxx11"
@@ -223,7 +331,7 @@ os = "windows"
 
     [[HDF5.download]]
     sha256 = "8141c55249d887cc7632705e2a1e6860c0626d26fac023538271373ddbc0bf5b"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.i686-w64-mingw32-libgfortran5-cxx11-mpi+microsoftmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.i686-w64-mingw32-libgfortran5-cxx11-mpi+microsoftmpi.tar.gz"
 [[HDF5]]
 arch = "powerpc64le"
 cxxstring_abi = "cxx11"
@@ -236,7 +344,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "e4f74e385e5363833888d8a26d87fc646a3d5afc3e04befab81ccbbc53647bb1"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.powerpc64le-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.powerpc64le-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "powerpc64le"
 cxxstring_abi = "cxx11"
@@ -249,7 +357,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "5c7f8dfc0a8b8231839c4f324760dc8cd7f9dc33d99afecd1d351ff69107efe5"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.powerpc64le-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.powerpc64le-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "powerpc64le"
 cxxstring_abi = "cxx11"
@@ -262,7 +370,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "13585b1b7f9cb76624f50258c8d106fdb123fed94711556b40bd78310c16f11a"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.powerpc64le-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.powerpc64le-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "riscv64"
 cxxstring_abi = "cxx11"
@@ -275,7 +383,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "2f3e95ce899d6a09b08ca6809e7b8511bfb871be71a096d265ff18392a5a3117"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.riscv64-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.riscv64-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "riscv64"
 cxxstring_abi = "cxx11"
@@ -288,7 +396,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "c5859a608272db6f67ddc0a45ee01d241c74ae64647c3de7098cceeb24d02486"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.riscv64-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.riscv64-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "riscv64"
 cxxstring_abi = "cxx11"
@@ -301,7 +409,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "958a5a460428b4327771a155c702dbd153466310fb9156302463418a28427828"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.riscv64-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.riscv64-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 git-tree-sha1 = "80e550c7e7ac77ae3e37394dc3c1e973683c2afc"
@@ -312,7 +420,7 @@ os = "macos"
 
     [[HDF5.download]]
     sha256 = "18a4b4fa6541d6f1df5b2a79af2d9f43bbe409d7713e132478390af92b729d00"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-apple-darwin-libgfortran5-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-apple-darwin-libgfortran5-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 git-tree-sha1 = "2fcadfdeb613a29899d756d36c310202b219c32f"
@@ -323,7 +431,7 @@ os = "macos"
 
     [[HDF5.download]]
     sha256 = "154f39619c76a497b891b4299349a6098b05b28c526d17db7225c9ac3bd3c936"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-apple-darwin-libgfortran5-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-apple-darwin-libgfortran5-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 git-tree-sha1 = "e45552e8bec18dbe7aa99c7cc864e66edfb5b4d2"
@@ -334,7 +442,7 @@ os = "macos"
 
     [[HDF5.download]]
     sha256 = "80edd0942649e70351585f4a8a54d3f487922b97f69482a6ebef1c38d96284be"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-apple-darwin-libgfortran5-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-apple-darwin-libgfortran5-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
@@ -347,7 +455,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "1770e0985f137baa43640197ed246497607f041ea1cec3d0377d06297443a54a"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-linux-gnu-libgfortran5-cxx11-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
@@ -360,7 +468,7 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "a46f5f981c8a5726aa2a9fc0cb65cf2f448d5b2825c9d1bb6fce2bce8331a3ba"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-linux-gnu-libgfortran5-cxx11-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
@@ -373,7 +481,33 @@ os = "linux"
 
     [[HDF5.download]]
     sha256 = "9d92a8bf8def7b81fb1283ed3e892c8c2e1a1955a8c1b39d26fd10e52f9a8a01"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-linux-gnu-libgfortran5-cxx11-mpi+openmpi.tar.gz"
+[[HDF5]]
+arch = "x86_64"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "4eff083345ce6fdefb266b48add3a2af3d015ff8"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "mpich"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "3416f986df891d68ea4b67158a5dad4f471cc410eb4563923ad30d1eb2e5881c"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-linux-musl-libgfortran5-cxx11-mpi+mpich.tar.gz"
+[[HDF5]]
+arch = "x86_64"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "383c5b3d1f66a83e5edb0b38df9574e4ff72a116"
+lazy = true
+libc = "musl"
+libgfortran_version = "5.0.0"
+mpi = "openmpi"
+os = "linux"
+
+    [[HDF5.download]]
+    sha256 = "79a483f6c0c2fcd1aa5908663b89a93a9ec991897701a09b1c97168cef26e7ba"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-linux-musl-libgfortran5-cxx11-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 git-tree-sha1 = "90edacade2c39b836244d461ad8e769d1645a5ff"
@@ -384,7 +518,7 @@ os = "freebsd"
 
     [[HDF5.download]]
     sha256 = "70ee86af982fe5d10cc69b658c651fcf5ffc6952b1137f3e48709ec59f857a3d"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-unknown-freebsd-libgfortran5-mpi+mpich.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-unknown-freebsd-libgfortran5-mpi+mpich.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 git-tree-sha1 = "9b8384820d1e7cf636504b5a2246ce27ade972b5"
@@ -395,7 +529,7 @@ os = "freebsd"
 
     [[HDF5.download]]
     sha256 = "4ca741f1a36e9d6b4227a95d31d48d53b8095706a647db9c7d7b1cfe76bc9f36"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-unknown-freebsd-libgfortran5-mpi+mpitrampoline.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-unknown-freebsd-libgfortran5-mpi+mpitrampoline.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 git-tree-sha1 = "fca5eed74e03e953e2f8a21f5b2ca9111dd02a90"
@@ -406,7 +540,7 @@ os = "freebsd"
 
     [[HDF5.download]]
     sha256 = "9b6736a4a6c3aaefe7788b05d6a94ecc1d46e2d1c37f6afca329a2bcb72c4092"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-unknown-freebsd-libgfortran5-mpi+openmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-unknown-freebsd-libgfortran5-mpi+openmpi.tar.gz"
 [[HDF5]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
@@ -418,4 +552,4 @@ os = "windows"
 
     [[HDF5.download]]
     sha256 = "df1518caed68f4d4aad814e9e7ede86b3755d97fb41d5b0e7e70f9d55d9f9293"
-    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+1/HDF5.v2.0.0.x86_64-w64-mingw32-libgfortran5-cxx11-mpi+microsoftmpi.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/HDF5_jll.jl/releases/download/HDF5-v2.0.0+2/HDF5.v2.0.0.x86_64-w64-mingw32-libgfortran5-cxx11-mpi+microsoftmpi.tar.gz"
