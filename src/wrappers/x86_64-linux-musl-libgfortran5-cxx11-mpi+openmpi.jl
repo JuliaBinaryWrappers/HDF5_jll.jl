@@ -9,12 +9,6 @@ using aws_c_s3_jll
 using libaec_jll
 using OpenMPI_jll
 JLLWrappers.@generate_wrapper_header("HDF5")
-JLLWrappers.@declare_library_product(libhdf5, "libhdf5.so.320")
-JLLWrappers.@declare_library_product(libhdf5_cpp, "libhdf5_cpp.so.320")
-JLLWrappers.@declare_library_product(libhdf5_fortran, "libhdf5_fortran.so.320")
-JLLWrappers.@declare_library_product(libhdf5_hl, "libhdf5_hl.so.320")
-JLLWrappers.@declare_library_product(libhdf5_hl_cpp, "libhdf5_hl_cpp.so.320")
-JLLWrappers.@declare_library_product(libhdf5_hl_fortran, "libhdf5_hl_fortran.so.320")
 JLLWrappers.@declare_executable_product(h5clear)
 JLLWrappers.@declare_executable_product(h5copy)
 JLLWrappers.@declare_executable_product(h5debug)
@@ -32,44 +26,14 @@ JLLWrappers.@declare_executable_product(h5repart)
 JLLWrappers.@declare_executable_product(h5stat)
 JLLWrappers.@declare_executable_product(h5unjam)
 JLLWrappers.@declare_executable_product(h5watch)
+JLLWrappers.@declare_library_product(libhdf5, "libhdf5.so.320")
+JLLWrappers.@declare_library_product(libhdf5_cpp, "libhdf5_cpp.so.320")
+JLLWrappers.@declare_library_product(libhdf5_fortran, "libhdf5_fortran.so.320")
+JLLWrappers.@declare_library_product(libhdf5_hl, "libhdf5_hl.so.320")
+JLLWrappers.@declare_library_product(libhdf5_hl_cpp, "libhdf5_hl_cpp.so.320")
+JLLWrappers.@declare_library_product(libhdf5_hl_fortran, "libhdf5_hl_fortran.so.320")
 function __init__()
     JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, LibCURL_jll, OpenSSL_jll, Zlib_jll, aws_c_s3_jll, libaec_jll, OpenMPI_jll, MPIPreferences)
-    JLLWrappers.@init_library_product(
-        libhdf5,
-        "lib/libhdf5.so",
-        RTLD_LAZY | RTLD_DEEPBIND,
-    )
-
-    JLLWrappers.@init_library_product(
-        libhdf5_cpp,
-        "lib/libhdf5_cpp.so",
-        RTLD_LAZY | RTLD_DEEPBIND,
-    )
-
-    JLLWrappers.@init_library_product(
-        libhdf5_fortran,
-        "lib/libhdf5_fortran.so",
-        RTLD_LAZY | RTLD_DEEPBIND,
-    )
-
-    JLLWrappers.@init_library_product(
-        libhdf5_hl,
-        "lib/libhdf5_hl.so",
-        RTLD_LAZY | RTLD_DEEPBIND,
-    )
-
-    JLLWrappers.@init_library_product(
-        libhdf5_hl_cpp,
-        "lib/libhdf5_hl_cpp.so",
-        RTLD_LAZY | RTLD_DEEPBIND,
-    )
-
-    JLLWrappers.@init_library_product(
-        libhdf5_hl_fortran,
-        "lib/libhdf5_hl_fortran.so",
-        RTLD_LAZY | RTLD_DEEPBIND,
-    )
-
     JLLWrappers.@init_executable_product(
         h5clear,
         "bin/h5clear",
@@ -153,6 +117,42 @@ function __init__()
     JLLWrappers.@init_executable_product(
         h5watch,
         "bin/h5watch",
+    )
+
+    JLLWrappers.@init_library_product(
+        libhdf5,
+        "lib/libhdf5.so",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
+
+    JLLWrappers.@init_library_product(
+        libhdf5_cpp,
+        "lib/libhdf5_cpp.so",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
+
+    JLLWrappers.@init_library_product(
+        libhdf5_fortran,
+        "lib/libhdf5_fortran.so",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
+
+    JLLWrappers.@init_library_product(
+        libhdf5_hl,
+        "lib/libhdf5_hl.so",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
+
+    JLLWrappers.@init_library_product(
+        libhdf5_hl_cpp,
+        "lib/libhdf5_hl_cpp.so",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
+
+    JLLWrappers.@init_library_product(
+        libhdf5_hl_fortran,
+        "lib/libhdf5_hl_fortran.so",
+        RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@generate_init_footer()
