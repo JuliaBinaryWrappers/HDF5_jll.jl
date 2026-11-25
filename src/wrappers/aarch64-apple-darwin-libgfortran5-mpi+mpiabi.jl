@@ -122,37 +122,37 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libhdf5,
-        "lib/libhdf5.320.2.0.dylib",
+        "lib/libhdf5.320.3.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_cpp,
-        "lib/libhdf5_cpp.320.2.0.dylib",
+        "lib/libhdf5_cpp.320.2.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_fortran,
-        "lib/libhdf5_fortran.320.1.2.dylib",
+        "lib/libhdf5_fortran.320.2.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_hl,
-        "lib/libhdf5_hl.320.0.3.dylib",
+        "lib/libhdf5_hl.320.0.4.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_hl_cpp,
-        "lib/libhdf5_hl_cpp.320.0.3.dylib",
+        "lib/libhdf5_hl_cpp.320.0.4.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libhdf5_hl_fortran,
-        "lib/libhdf5_hl_fortran.320.0.3.dylib",
+        "lib/libhdf5_hl_fortran.320.0.4.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
